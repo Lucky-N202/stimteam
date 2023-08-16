@@ -1,19 +1,21 @@
 import useMediaQuery from "@/hooks/useMediaQueries";
-import ActionButton from "@/shared/ActionButton";
 import { SelectedPage } from "@/shared/types";
-import HomePageText from '@/assets/HomePageText.png';
-import HomePageGraphic from '@/assets/Logo.jpg';
-import AnchorLink from "react-anchor-link-smooth-scroll";
+import HomeImage from "@/assets/real-estate-374190_1280.jpg";
+import Image1 from "@/assets/Image1.jpg";
+import Image2 from "@/assets/Image2.jpg";
+import Image3 from "@/assets/Image3.jpg";
+import Image4 from "@/assets/Image4.jpg";
+import Image5 from "@/assets/exit-419280_1280.jpg";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const images = [
-    'src/assets/real-estate-374190_1280.jpg',
-    'src/assets/Image1.jpg',
-    'src/assets/Image2.jpg',
-    'src/assets/Image3.jpg',
-    'src/assets/Image4.jpg',
-    'src/assets/exit-419280_1280.jpg',
+    HomeImage,
+    Image1,
+    Image2,
+    Image3,
+    Image4,
+    Image5,
     
   ];
 
