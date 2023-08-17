@@ -1,10 +1,9 @@
 import useMediaQuery from "@/hooks/useMediaQueries";
 import { SelectedPage } from "@/shared/types";
 import HomeImage from "@/assets/real-estate-374190_1280.jpg";
-import Image1 from "@/assets/Image1.jpg";
-import Image2 from "@/assets/Image2.jpg";
-import Image3 from "@/assets/Image3.jpg";
-import Image4 from "@/assets/Image4.jpg";
+import Image1 from "@/assets/portrait-man-room-opening-door-with-hands-gloves.jpg";
+import Image2 from "@/assets/pexels-ksenia-chern.jpg";
+import Image3 from "@/assets/garage-door-2578744_1280.jpg";
 import Image5 from "@/assets/exit-419280_1280.jpg";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
@@ -14,7 +13,6 @@ const images = [
     Image1,
     Image2,
     Image3,
-    Image4,
     Image5,
     
   ];

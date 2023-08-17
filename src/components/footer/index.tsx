@@ -1,23 +1,53 @@
 
+import { SelectedPage } from '@/shared/types';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 
+type Props = {
+    setSelectedPage: (vulue: SelectedPage) => void;
+}
 
-const Footer = () => {
+const Footer = ( {setSelectedPage}: Props) => {
   return (
     <footer className="bg-slate-200 py-5">
 
-        <div className="justify-content mx-auto w-5/6 gap-16 md:flex">
+        <div className="container mx-auto text-center">
+            <p className="text-sm">
+                &copy; {new Date().getFullYear()} Stimteam Construction Engineering. All rights reserved.
+            </p>
 
-            <div className="mt-16 basis-1/2 md:mt-0">
-          
-                <p className="my-2 text-sm">
-                    © {new Date().getFullYear()}  Stimteam Construction Ltd - All Rights Reserved.
+            <div className="mt-4 flex justify-center space-x-4">
+                <p  className="text-gray-400">
+                    Privacy Policy
                 </p>
+                <p  className="text-gray-400">
+                    Terms of Service
+                </p>
+                
+                <AnchorLink
+                    className="text-gray-400 hover:text-white"
+                    onClick={ () => setSelectedPage(SelectedPage.Contact)}
+                    href={`#${SelectedPage.Contact}`}
+                 >
+                    <p> Contact Us</p>   
 
+                </AnchorLink>
             </div>
-
-          
-
+            <div className="mt-4 flex gap-3">
+                <a href="#" className="text-gray-400 hover:text-white">
+                    <FaFacebook size={24} />
+                </a>
+                
+                <p  className="text-gray-400 hover:text-white mx-4">
+                    <FaTwitter size={24} />
+                </p>
+                <p  className="text-gray-400 hover:text-white">
+                    <FaInstagram size={24} />
+                </p>
+    
+            </div>   
         </div>
+    
 
     </footer>
   )
