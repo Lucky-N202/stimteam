@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { useForm } from "react-hook-form"
 import HText from "@/shared/HText";
 import ContactUsPageGraphic from "@/assets/contact-us.jpg"
+import { FaMapMarkerAlt } from "react-icons/fa";
 
 type Props = {
     setSelectedPage: (vulue: SelectedPage) => void;
@@ -164,17 +165,38 @@ const ContactUs = ({ setSelectedPage }: Props) => {
         </motion.div>
 
         <div className="p-6 mt-5 bg-slate-100  rounded-lg shadow-md">
+            
             <h3 className="text-xl font-semibold mb-2">Contact Details</h3>
+               
+            
             <p className="text-gray-600">
               You can also reach us at:
             </p>
+            
             <p className="text-lg mt-2">
-              <span className="text-primary-500 font-semibold">Phone:</span> (072) 456-7890
+              <span className="text-primary-500 font-semibold">Phone:</span> (071) 386 9164
+
             </p>
             <p className="text-lg">
               <span className="text-primary-500 font-semibold">Email:</span> info@stimteam.com
             </p>
-          </div>
+
+           
+              
+              <div className="">
+                <p className="text-xl font-semibold my-2 ">
+                  Address:
+                </p>
+                <p className="text-primary-500">
+                70 Flowers Street, Capital Park, Pretoria
+                </p>
+              </div>
+            
+            
+           
+        </div>
+
+       
 
     </section>
   )

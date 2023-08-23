@@ -1,7 +1,8 @@
 
 import { SelectedPage } from '@/shared/types';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaFacebook, FaTwitter, FaInstagram, FaWhatsapp } from 'react-icons/fa';
+
 
 type Props = {
     setSelectedPage: (vulue: SelectedPage) => void;
@@ -39,11 +40,11 @@ const Footer = ( {setSelectedPage}: Props) => {
                 </a>
                 
                 <p  className="text-gray-400 hover:text-white mx-4">
-                    <FaTwitter size={24} />
-                </p>
-                <p  className="text-gray-400 hover:text-white">
                     <FaInstagram size={24} />
                 </p>
+                <a href='https://wa.me/+27699771656'  target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+                    <FaWhatsapp size={24} />
+                </a>
     
             </div>   
         </div>
