@@ -71,7 +71,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                     <form
                         target="_blank"
                         onSubmit={ onSubmit}
-                        action="https://formsubmit.co/6fb60d42d6ea698c9ae6c5816f6a4a67"
+                        action="https://formsubmit.co/e321b385938224d2efeaeb0b076e4e4a"
                         method="POST"
                     >
 
@@ -178,7 +178,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
 
             </p>
             <p className="text-lg">
-              <span className="text-primary-500 font-semibold">Email:</span> info@stimteam.com
+              <span className="text-primary-500 font-semibold">Email:</span> info@stimteamconstruction.co.za
             </p>
 
            

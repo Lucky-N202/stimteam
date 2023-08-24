@@ -18,12 +18,7 @@ const Footer = ( {setSelectedPage}: Props) => {
             </p>
 
             <div className="mt-4 flex justify-center space-x-4">
-                <p  className="text-gray-400">
-                    Privacy Policy
-                </p>
-                <p  className="text-gray-400">
-                    Terms of Service
-                </p>
+              
                 
                 <AnchorLink
                     className="text-gray-400 hover:text-white"
@@ -35,7 +30,7 @@ const Footer = ( {setSelectedPage}: Props) => {
                 </AnchorLink>
             </div>
             <div className="mt-4 flex gap-3">
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="https://web.facebook.com/profile.php?id=100066475691445" className="text-gray-400 hover:text-white">
                     <FaFacebook size={24} />
                 </a>
                 
