@@ -150,7 +150,7 @@ const About = ( { setSelectedPage }: Props) => {
                     <div className="relative mt-16">
                         <div className="before:absolute before:-bottom-20 before:right-40 ">
                             <ActionButton setSelectedPage={setSelectedPage}>
-                                Join Now
+                                Get quote
                             </ActionButton>
                         </div>
 
