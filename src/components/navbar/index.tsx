@@ -15,7 +15,7 @@ const Navbar = ({isTopOfPage,selectedPage, setSeletedPage}: Props) => {
     const navbarBackground = isTopOfPage ? "": "bg-transparent drop-shadow";
 
   return (
-    <nav className="flex justify-center py-20 max-w-7xl text-lg mx-auto">
+    <nav className="flex justify-center py-2 max-w-7xl text-lg mx-auto">
       <div className= {`${navbarBackground} flex  top-0 z-30  space-x-5`}>
         <div className="mx-auto">
             <img className="w-40 bg-transparent object-contain cursor-pointer"
