@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import AboutUs from "./AboutUs";
 import ActionButton from "@/shared/ActionButton";
 import AboutPageGraphic from "@/assets/door-knob.jpg"
+import { Helmet } from "react-helmet-async";
 
 
 const about: Array<AboutType> = [
@@ -42,6 +43,12 @@ const About = ( { setSelectedPage }: Props) => {
         id="about"
         className="mx-auto min-h-full w-5/6"
     >
+        <Helmet>
+            <title>About</title>
+            <meta name="description" 
+                content="Learn about what we offer." />
+                <link rel="canonical" href="#about" />
+        </Helmet>
         <motion.div
             onViewportEnter={ () => setSelectedPage(SelectedPage.About)}
         >
